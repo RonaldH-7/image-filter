@@ -1,0 +1,50 @@
+[
+  {
+    "name": "original",
+    "filterValues": {
+      "grayscale": 0,
+      "sepia": 0,
+      "brightness": 100,
+      "contrast": 100,
+      "invert": 0,
+      "opacity": 100,
+      "saturate": 100
+    }
+  },
+  {
+    "name": "original",
+    "filterValues": {
+      "grayscale": 0,
+      "sepia": 0,
+      "brightness": 100,
+      "contrast": 100,
+      "invert": 0,
+      "opacity": 100,
+      "saturate": 100
+    }
+  },
+  {
+    "name": "original",
+    "filterValues": {
+      "grayscale": 0,
+      "sepia": 0,
+      "brightness": 100,
+      "contrast": 100,
+      "invert": 0,
+      "opacity": 100,
+      "saturate": 100
+    }
+  },
+  {
+    "name": "original",
+    "filterValues": {
+      "grayscale": 0,
+      "sepia": 0,
+      "brightness": 100,
+      "contrast": 100,
+      "invert": 0,
+      "opacity": 100,
+      "saturate": 100
+    }
+  }
+]

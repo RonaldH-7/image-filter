@@ -1,0 +1,22 @@
+i:hover {
+  cursor: pointer;
+}
+
+.container-input {
+  .input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    label {
+      text-transform: capitalize;
+    }
+  }
+}
+
+:host {
+  ::ng-deep .p-slider.p-slider-horizontal {
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+}

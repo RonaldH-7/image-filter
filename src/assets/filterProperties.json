@@ -1,0 +1,37 @@
+[
+  {
+    "property": "grayscale",
+    "max": 100,
+    "min": 0
+  },
+  {
+    "property": "sepia",
+    "max": 100,
+    "min": 0
+  },
+  {
+    "property": "brightness",
+    "max": 500,
+    "min": 0
+  },
+  {
+    "property": "contrast",
+    "max": 500,
+    "min": 0
+  },
+  {
+    "property": "invert",
+    "max": 100,
+    "min": 0
+  },
+  {
+    "property": "opacity",
+    "max": 100,
+    "min": 0
+  },
+  {
+    "property": "saturate",
+    "max": 500,
+    "min": 0
+  }
+]
