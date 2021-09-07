@@ -6,7 +6,7 @@
 </ng-template>
 </p-card>
 
-<p-dialog [(visible)]="isDialogOpen">
+<p-dialog [(visible)]="isDialogOpen" [resizable]="false" [modal]="true">
   <div class="dialog-image">
     <img loading="lazy" src="../assets/mountain.jpg" width="100%" alt="" [ngStyle]="getFilters()">
     <div class="overlay" [ngStyle]="getOverlayColor()"></div>
@@ -32,15 +32,23 @@
       </div>
     </div>
 
-    <p-colorPicker [(ngModel)]="color" format="rgb" appendTo="body"></p-colorPicker>
-    <p-inputNumber
-      [(ngModel)]="overlayStrength"
-      [max]="100"
-      [min]="0"
-      mode="decimal"
-      suffix="%"
-      size="1"
-      [showButtons]="true">
-    </p-inputNumber>
+    <div class="container-overlay">
+      <span class="color-picker">
+        <labeL>Overlay Color</labeL>
+        <p-colorPicker [(ngModel)]="color" format="rgb" appendTo="body"></p-colorPicker>
+      </span>
+      <span class="input">
+        <labeL>Overlay Strength</labeL>
+        <p-inputNumber
+          [(ngModel)]="overlayStrength"
+          [max]="100"
+          [min]="0"
+          mode="decimal"
+          suffix="%"
+          size="1"
+          [showButtons]="true">
+        </p-inputNumber>
+      </span>
+    </div>
   </div>
 </p-dialog>
