@@ -10,13 +10,57 @@ i:hover {
 
     label {
       text-transform: capitalize;
+      font-size: 0.8rem;
     }
   }
 }
 
-:host {
-  ::ng-deep .p-slider.p-slider-horizontal {
+:host ::ng-deep {
+  .p-dialog {
+
+    .p-dialog-header {
+      padding: 5px;
+    }
+
+    .p-dialog-content {
+      padding-top: 5px;
+      display: flex;
+      flex-direction: row;
+
+      img {
+        height: 350px;
+        margin-right: 20px;
+        border: 1px solid lightgray;
+      }
+    }
+  }
+
+  .p-slider.p-slider-horizontal {
     margin-top: 5px;
     margin-bottom: 15px;
+  }
+
+  .p-card {
+    width: 275px;
+    margin: 10px 10px 10px 0px;
+    display: inline-block;
+
+    .p-card-content {
+      position: relative;
+      padding: 0;
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 99%;
+        background-color: rgba(0, 0, 0, 0.3);
+        // background-image: linear-gradient(to right,#3204fdba, #9907facc), url("../../assets/mountain.jpg");
+      }
+    }
+
+    .p-card-body {
+      background-color: lightblue;
+    }
   }
 }

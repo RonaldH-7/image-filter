@@ -1,12 +1,15 @@
-<p-card [style]="{ width: '275px', margin: '10px 10px 10px 0px', display: 'inline-block', backgroundColor: 'gray' }">
+<p-card>
     <img loading="lazy" src="../assets/mountain.jpg" width="100%" alt="" [ngStyle]="getFilters()">
-  <ng-template pTemplate="footer">
-    <i class="pi pi-sliders-h" (click)="onClickFilter()" style="font-size: 1.25rem"></i>
-  </ng-template>
+    <div class="overlay"></div>
+<ng-template pTemplate="footer">
+  <i class="pi pi-sliders-h" (click)="onClickFilter()" style="font-size: 1.25rem"></i>
+</ng-template>
 </p-card>
 
-<p-dialog [(visible)]="isDialogOpen" [style]="{width: '300px'}">
-  <div *ngFor="let filter of filterValues; let i = index" class="container-input">
+<p-dialog [(visible)]="isDialogOpen">
+<img loading="lazy" src="../assets/mountain.jpg" width="100%" alt="" [ngStyle]="getFilters()">
+<div>
+<div *ngFor="let filter of filterValues; let i = index" class="container-input">
     <span class="input">
       <label>{{ filter.property }}</label>
       <p-inputNumber
@@ -23,4 +26,5 @@
       [max]="filterProperties.default[i].max"
       [min]="filterProperties.default[i].min"></p-slider>
   </div>
+</div>
 </p-dialog>

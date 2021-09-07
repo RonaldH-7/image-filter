@@ -8,18 +8,16 @@ import { CardModule } from 'primeng/card';
 import { DialogModule } from 'primeng/dialog';
 import { InputNumberModule } from 'primeng/inputnumber';
 import { InputSwitchModule } from 'primeng/inputswitch';
-import { SliderModule } from 'primeng/slider';
 import { InputTextModule } from 'primeng/inputtext';
+import { SliderModule } from 'primeng/slider';
 
 import { AppComponent } from './app.component';
 import { ImageComponent } from './image/image.component';
-import { FilterComponent } from './filter/filter.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ImageComponent,
-    FilterComponent
+    ImageComponent
   ],
   imports: [
     BrowserModule,
@@ -30,8 +28,8 @@ import { FilterComponent } from './filter/filter.component';
     DialogModule,
     InputNumberModule,
     InputSwitchModule,
-    SliderModule,
-    InputTextModule
+    InputTextModule,
+    SliderModule
   ],
   providers: [],
   bootstrap: [AppComponent]
