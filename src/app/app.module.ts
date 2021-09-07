@@ -5,6 +5,7 @@ import { NgModule } from '@angular/core';
 
 import { ButtonModule } from 'primeng/button';
 import { CardModule } from 'primeng/card';
+import { ColorPickerModule } from 'primeng/colorpicker';
 import { DialogModule } from 'primeng/dialog';
 import { InputNumberModule } from 'primeng/inputnumber';
 import { InputSwitchModule } from 'primeng/inputswitch';
@@ -25,6 +26,7 @@ import { ImageComponent } from './image/image.component';
     FormsModule,
     ButtonModule,
     CardModule,
+    ColorPickerModule,
     DialogModule,
     InputNumberModule,
     InputSwitchModule,

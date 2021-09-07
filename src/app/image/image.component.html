@@ -1,30 +1,46 @@
 <p-card>
-    <img loading="lazy" src="../assets/mountain.jpg" width="100%" alt="" [ngStyle]="getFilters()">
-    <div class="overlay"></div>
+  <img loading="lazy" src="../assets/mountain.jpg" width="100%" alt="" [ngStyle]="getFilters()">
+  <div class="overlay" [ngStyle]="getOverlayColor()"></div>
 <ng-template pTemplate="footer">
-  <i class="pi pi-sliders-h" (click)="onClickFilter()" style="font-size: 1.25rem"></i>
+<i class="pi pi-sliders-h" (click)="onClickFilter()" style="font-size: 1.25rem"></i>
 </ng-template>
 </p-card>
 
 <p-dialog [(visible)]="isDialogOpen">
-<img loading="lazy" src="../assets/mountain.jpg" width="100%" alt="" [ngStyle]="getFilters()">
-<div>
-<div *ngFor="let filter of filterValues; let i = index" class="container-input">
-    <span class="input">
-      <label>{{ filter.property }}</label>
-      <p-inputNumber
-        [(ngModel)]="filterValues[i].value"
-        [max]="filterProperties.default[i].max"
-        [min]="filterProperties.default[i].min"
-        mode="decimal"
-        suffix="%"
-        size="1"
-        [showButtons]="true">
-      </p-inputNumber>
-    </span>
-    <p-slider [(ngModel)]="filterValues[i].value"
-      [max]="filterProperties.default[i].max"
-      [min]="filterProperties.default[i].min"></p-slider>
+  <div class="dialog-image">
+    <img loading="lazy" src="../assets/mountain.jpg" width="100%" alt="" [ngStyle]="getFilters()">
+    <div class="overlay" [ngStyle]="getOverlayColor()"></div>
   </div>
-</div>
+  <div class="container">
+    <div>
+      <div *ngFor="let filter of filterValues; let i = index" class="container-input">
+        <span class="input">
+          <label>{{ filter.property }}</label>
+          <p-inputNumber
+            [(ngModel)]="filterValues[i].value"
+            [max]="filterProperties.default[i].max"
+            [min]="filterProperties.default[i].min"
+            mode="decimal"
+            suffix="%"
+            size="1"
+            [showButtons]="true">
+          </p-inputNumber>
+        </span>
+        <p-slider [(ngModel)]="filterValues[i].value"
+          [max]="filterProperties.default[i].max"
+          [min]="filterProperties.default[i].min"></p-slider>
+      </div>
+    </div>
+
+    <p-colorPicker [(ngModel)]="color" format="rgb" appendTo="body"></p-colorPicker>
+    <p-inputNumber
+      [(ngModel)]="overlayStrength"
+      [max]="100"
+      [min]="0"
+      mode="decimal"
+      suffix="%"
+      size="1"
+      [showButtons]="true">
+    </p-inputNumber>
+  </div>
 </p-dialog>

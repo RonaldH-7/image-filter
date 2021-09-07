@@ -12,12 +12,13 @@ export class ImageComponent implements OnInit {
   filterProperties: any = [];
   name: string;
   isDialogOpen: boolean = false;
+  color: any = {};
+  overlayStrength: number;
 
   constructor() {}
 
   ngOnInit() {
     this.filterProperties = filterProperties;
-    console.log(this.filterProperties);
 
     for (const [key, value] of Object.entries(this.filter.filterValues)) {
       this.filterValues.push({
@@ -25,6 +26,11 @@ export class ImageComponent implements OnInit {
         value: value
       });
     }
+
+    this.color.r = this.filter.overlayColor.r;
+    this.color.g = this.filter.overlayColor.g;
+    this.color.b = this.filter.overlayColor.b;
+    this.overlayStrength = this.filter.overlayStrength;
 
     this.name = this.filter.name;
   }
@@ -37,6 +43,11 @@ export class ImageComponent implements OnInit {
     });
 
     return { filter: filterString };
+  }
+
+  getOverlayColor(): Object {
+    const color = `rgba(${this.color.r}, ${this.color.g}, ${this.color.b}, ${this.overlayStrength / 100})`;
+    return { backgroundColor: color };
   }
 
   onClickFilter() {

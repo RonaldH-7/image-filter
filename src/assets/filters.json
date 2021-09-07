@@ -9,7 +9,9 @@
       "invert": 0,
       "opacity": 100,
       "saturate": 100
-    }
+    },
+    "overlayColor": { "r": 255, "g": 255, "b": 255 },
+    "overlayStrength": 0
   },
   {
     "name": "original",
@@ -21,7 +23,9 @@
       "invert": 0,
       "opacity": 100,
       "saturate": 100
-    }
+    },
+    "overlayColor": { "r": 255, "g": 255, "b": 255 },
+    "overlayStrength": 0
   },
   {
     "name": "original",
@@ -33,7 +37,9 @@
       "invert": 0,
       "opacity": 100,
       "saturate": 100
-    }
+    },
+    "overlayColor": { "r": 255, "g": 255, "b": 255 },
+    "overlayStrength": 0
   },
   {
     "name": "original",
@@ -45,6 +51,8 @@
       "invert": 0,
       "opacity": 100,
       "saturate": 100
-    }
+    },
+    "overlayColor": { "r": 255, "g": 255, "b": 255 },
+    "overlayStrength": 0
   }
 ]
