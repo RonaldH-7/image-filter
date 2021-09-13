@@ -1,14 +1,14 @@
 <p-card>
-  <img loading="lazy" src="../assets/mountain.jpg" width="100%" alt="" [ngStyle]="getFilters()">
+  <img loading="lazy" [src]="imagePath" width="100%" alt="" [ngStyle]="getFilters()">
   <div class="overlay" [ngStyle]="getOverlayColor()"></div>
-<ng-template pTemplate="footer">
-<i class="pi pi-sliders-h" (click)="onClickFilter()" style="font-size: 1.25rem"></i>
-</ng-template>
+  <ng-template pTemplate="footer">
+    <i class="pi pi-sliders-h" (click)="onClickFilter()" style="font-size: 1.25rem"></i>
+  </ng-template>
 </p-card>
 
 <p-dialog [(visible)]="isDialogOpen" [resizable]="false" [modal]="true">
   <div class="dialog-image">
-    <img loading="lazy" src="../assets/mountain.jpg" width="100%" alt="" [ngStyle]="getFilters()">
+    <img loading="lazy" [src]="imagePath" width="100%" #testreference alt="" [ngStyle]="getFilters()">
     <div class="overlay" [ngStyle]="getOverlayColor()"></div>
   </div>
   <div class="container">

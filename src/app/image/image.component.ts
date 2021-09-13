@@ -14,6 +14,7 @@ export class ImageComponent implements OnInit {
   isDialogOpen: boolean = false;
   color: any = {};
   overlayStrength: number;
+  imagePath: string = '../assets/sunflower.jpg';
 
   constructor() {}
 
