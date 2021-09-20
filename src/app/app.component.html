@@ -1,4 +1,14 @@
 <h1>Image Filter Application</h1>
+<p-fileUpload
+  #uploadRef
+  name="myfile[]"
+  customUpload="true"
+  (uploadHandler)="onUpload($event, uploadRef)"
+  mode="basic"
+  accept="image/*"
+  [auto]="true"
+  chooseLabel="Upload">
+</p-fileUpload>
 
 <div class="container">
   <app-image
