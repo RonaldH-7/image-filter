@@ -43,7 +43,7 @@ i:hover {
     .p-dialog-content {
       padding-top: 5px;
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
 
       .pi {
         font-size: 0.7rem;
@@ -61,6 +61,12 @@ i:hover {
       img {
         height: 350px;
         border-radius: 10px;
+      }
+    }
+
+    @media screen and (min-width: 600px) {
+      .p-dialog-content {
+        flex-direction: row;
       }
     }
 

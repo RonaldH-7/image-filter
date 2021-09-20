@@ -7,6 +7,7 @@ import * as filterProperties from '../../assets/filterProperties.json';
   styleUrls: ['./image.component.scss']
 })
 export class ImageComponent implements OnInit {
+  @Input() imagePath: string = '../assets/sunflower.jpg';
   @Input() filter: any;
   filterValues: any[] = [];
   filterProperties: any = [];
@@ -14,7 +15,7 @@ export class ImageComponent implements OnInit {
   isDialogOpen: boolean = false;
   color: any = {};
   overlayStrength: number;
-  imagePath: string = '../assets/sunflower.jpg';
+
 
   constructor() {}
 

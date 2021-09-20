@@ -1,12 +1,9 @@
-<h3>To do list:</h3>
-<ul>
-  <li>Figure out width of images for various screen sizes</li>
-  <li>Ability to upload an image</li>
-  <li>Ability to download their filtered image</li>
-  <li>Add the '+' card to allow users to add their own filters (saved in local storage)</li>
-</ul>
+<h1>Image Filter Application</h1>
 
-<app-image
-  *ngFor="let filter of filters.default"
-  [filter]="filter">
-</app-image>
+<div class="container">
+  <app-image
+    *ngFor="let filter of filters.default"
+    [filter]="filter"
+    [imagePath]="imagePath">
+  </app-image>
+</div>

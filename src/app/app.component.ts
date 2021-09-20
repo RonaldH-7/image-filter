@@ -8,4 +8,5 @@ import * as data from '../assets/filters.json';
 })
 export class AppComponent {
   filters: any = data;
+  imagePath: string = "../assets/sunflower.jpg";
 }

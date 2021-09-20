@@ -1,0 +1,39 @@
+/* Default (Applies to everything between 0 and 449 px) */
+@media screen and (min-width: 0px) {
+  .container {
+    max-width: 300px;
+    margin: auto;
+  }
+}
+
+/* Ipad Pro */
+@media screen and (min-width: 450px) and (max-width: 991px) {
+  .container {
+    max-width: 300px;
+    margin: auto;
+  }
+}
+
+/* Tablets */
+@media screen and (min-width: 750px) and (max-width: 1023px) {
+  .container {
+    max-width: 600px;
+    margin: auto;
+  }
+}
+
+/* Small Desktop */
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 900px;
+    margin: auto;
+  }
+}
+
+/* Regular Desktop */
+@media screen and (min-width: 1300px) {
+  .container {
+    max-width: 1200px;
+    margin: auto;
+  }
+}
