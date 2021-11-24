@@ -2,36 +2,49 @@
   {
     "property": "grayscale",
     "max": 100,
-    "min": 0
+    "min": 0,
+    "suffix": "%"
   },
   {
     "property": "sepia",
     "max": 100,
-    "min": 0
+    "min": 0,
+    "suffix": "%"
   },
   {
     "property": "brightness",
     "max": 500,
-    "min": 0
+    "min": 0,
+    "suffix": "%"
   },
   {
     "property": "contrast",
     "max": 500,
-    "min": 0
+    "min": 0,
+    "suffix": "%"
   },
   {
     "property": "invert",
     "max": 100,
-    "min": 0
+    "min": 0,
+    "suffix": "%"
   },
   {
     "property": "opacity",
     "max": 100,
-    "min": 0
+    "min": 0,
+    "suffix": "%"
   },
   {
     "property": "saturate",
     "max": 500,
-    "min": 0
+    "min": 0,
+    "suffix": "%"
+  },
+  {
+    "property": "hue",
+    "max": 360,
+    "min": 0,
+    "suffix": "°"
   }
 ]

@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import * as filterProperties from '../../assets/filterProperties.json';
+import * as blendModes from '../../assets/blendModes.json';
 
 @Component({
   selector: 'app-image',
@@ -11,6 +12,7 @@ export class ImageComponent implements OnInit {
   @Input() filter: any;
   filterValues: any[] = [];
   filterProperties: any = [];
+  blendModes: any = [];
   name: string;
   isDialogOpen: boolean = false;
   color: any = {};
@@ -20,6 +22,7 @@ export class ImageComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
+    this.blendModes = blendModes;
     this.filterProperties = filterProperties;
 
     for (const [key, value] of Object.entries(this.filter.filterValues)) {
@@ -40,7 +43,12 @@ export class ImageComponent implements OnInit {
   getFilters(): Object {
     let filterString = '';
     this.filterValues.forEach((item) => {
-      const string = `${item.property}(${item.value}%) `;
+      let string = '';
+      if (item.property === 'hue') {
+        string = `hue-rotate(${item.value}deg) `;
+      } else {
+        string = `${item.property}(${item.value}%) `;
+      }
       filterString += string;
     });
 

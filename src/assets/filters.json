@@ -8,13 +8,59 @@
       "contrast": 100,
       "invert": 0,
       "opacity": 100,
-      "saturate": 100
+      "saturate": 100,
+      "hue": 0
     },
     "overlayColor": { "r": 0, "g": 0, "b": 0 },
     "overlayStrength": 0
   },
   {
-    "name": "original",
+    "name": "Blue",
+    "filterValues": {
+      "grayscale": 0,
+      "sepia": 0,
+      "brightness": 104,
+      "contrast": 104,
+      "invert": 0,
+      "opacity": 100,
+      "saturate": 122,
+      "hue": 0
+    },
+    "overlayColor": { "r": 0, "g": 255, "b": 250 },
+    "overlayStrength": 13
+  },
+  {
+    "name": "Yellow",
+    "filterValues": {
+      "grayscale": 0,
+      "sepia": 0,
+      "brightness": 103,
+      "contrast": 114,
+      "invert": 0,
+      "opacity": 100,
+      "saturate": 122,
+      "hue": 0
+    },
+    "overlayColor": { "r": 250, "g": 233, "b": 0 },
+    "overlayStrength": 23
+  },
+  {
+    "name": "Red",
+    "filterValues": {
+      "grayscale": 0,
+      "sepia": 0,
+      "brightness": 100,
+      "contrast": 97,
+      "invert": 0,
+      "opacity": 100,
+      "saturate": 111,
+      "hue": 330
+    },
+    "overlayColor": { "r": 255, "g": 0, "b": 0 },
+    "overlayStrength": 13
+  },
+  {
+    "name": "Pink",
     "filterValues": {
       "grayscale": 0,
       "sepia": 0,
@@ -22,107 +68,70 @@
       "contrast": 100,
       "invert": 0,
       "opacity": 100,
-      "saturate": 100
+      "saturate": 100,
+      "hue": 0
     },
-    "overlayColor": { "r": 0, "g": 0, "b": 0 },
-    "overlayStrength": 0
+    "overlayColor": { "r": 250, "g": 0, "b": 204 },
+    "overlayStrength": 50
   },
   {
-    "name": "original",
+    "name": "Yellow Tint",
+    "filterValues": {
+      "grayscale": 0,
+      "sepia": 50,
+      "brightness": 100,
+      "contrast": 107,
+      "invert": 0,
+      "opacity": 100,
+      "saturate": 165,
+      "hue": 0
+    },
+    "overlayColor": { "r": 58, "g": 0, "b": 250 },
+    "overlayStrength": 50
+  },
+  {
+    "name": "Soft Pink",
     "filterValues": {
       "grayscale": 0,
       "sepia": 0,
       "brightness": 100,
-      "contrast": 100,
+      "contrast": 128,
       "invert": 0,
       "opacity": 100,
-      "saturate": 100
+      "saturate": 120,
+      "hue": 0
     },
-    "overlayColor": { "r": 0, "g": 0, "b": 0 },
-    "overlayStrength": 0
+    "overlayColor": { "r": 250, "g": 0, "b": 204 },
+    "overlayStrength": 15
   },
   {
-    "name": "original",
+    "name": "Cold Blue",
     "filterValues": {
-      "grayscale": 0,
+      "grayscale": 1000,
       "sepia": 0,
       "brightness": 100,
-      "contrast": 100,
+      "contrast": 128,
       "invert": 0,
       "opacity": 100,
-      "saturate": 100
+      "saturate": 120,
+      "hue": 0
     },
-    "overlayColor": { "r": 0, "g": 0, "b": 0 },
-    "overlayStrength": 0
+    "overlayColor": { "r": 0, "g": 142, "b": 250 },
+    "overlayStrength": 15
   },
   {
-    "name": "original",
+    "name": "Teal",
     "filterValues": {
-      "grayscale": 0,
-      "sepia": 0,
-      "brightness": 100,
-      "contrast": 100,
+      "grayscale": 10,
+      "sepia": 50,
+      "brightness": 105,
+      "contrast": 104,
       "invert": 0,
       "opacity": 100,
-      "saturate": 100
+      "saturate": 100,
+      "hue": 0
     },
-    "overlayColor": { "r": 0, "g": 0, "b": 0 },
-    "overlayStrength": 0
-  },
-  {
-    "name": "original",
-    "filterValues": {
-      "grayscale": 0,
-      "sepia": 0,
-      "brightness": 100,
-      "contrast": 100,
-      "invert": 0,
-      "opacity": 100,
-      "saturate": 100
-    },
-    "overlayColor": { "r": 0, "g": 0, "b": 0 },
-    "overlayStrength": 0
-  },
-  {
-    "name": "original",
-    "filterValues": {
-      "grayscale": 0,
-      "sepia": 0,
-      "brightness": 100,
-      "contrast": 100,
-      "invert": 0,
-      "opacity": 100,
-      "saturate": 100
-    },
-    "overlayColor": { "r": 0, "g": 0, "b": 0 },
-    "overlayStrength": 0
-  },
-  {
-    "name": "original",
-    "filterValues": {
-      "grayscale": 0,
-      "sepia": 0,
-      "brightness": 100,
-      "contrast": 100,
-      "invert": 0,
-      "opacity": 100,
-      "saturate": 100
-    },
-    "overlayColor": { "r": 0, "g": 0, "b": 0 },
-    "overlayStrength": 0
-  },
-  {
-    "name": "original",
-    "filterValues": {
-      "grayscale": 0,
-      "sepia": 0,
-      "brightness": 100,
-      "contrast": 100,
-      "invert": 0,
-      "opacity": 100,
-      "saturate": 100
-    },
-    "overlayColor": { "r": 0, "g": 0, "b": 0 },
-    "overlayStrength": 0
+    "overlayColor": { "r": 0, "g": 229, "b": 250 },
+    "overlayStrength": 13
   }
 ]
